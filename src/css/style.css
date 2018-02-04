@@ -387,10 +387,241 @@ a{
 .site-footer select:focus{
   outline: none;
 }
-
+/*********************************************************
 /* Responsive styles */
-
-/* Max 970px */
-@media (max-width: 970px) and (min-width: 600px) {
-  
+/*Ipad Pro */
+@media (max-width: 1024px) and (min-width: 971px){
+  .site-header .site-navigation ul li a {
+    font-size: 1.8rem;
+}
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero-description {
+    font-size: 2rem;
+  }
+  .hero-btn{
+    margin-left: 10rem;
+    font-size: 2rem;
+  }
+  .row{
+    margin: 0;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .feature-description-text {
+    font-size: 2.2rem;
+  }
+  .users-feedback-opinion {
+    font-size: 2.5rem;
+  }
+  .app-functions-column-left p {
+    font-size: 1.8rem;
+  }
+  .app-functions-column-right p {
+    font-size: 1.8rem;
+  }
+  .subscribe-text {
+    font-size: 2rem;
+  }
+  .input-wrapper input[type="email"] {
+    padding: 1rem 35rem 1rem 2rem;
+    margin-top: 6rem;
+    font-size: 2rem;
+  }
+  .subscribe-btn{
+    margin: 6rem 0 0 23rem;
+    font-size: 2rem;
+  }
+  .download-text{
+    font-size: 2rem;
+  }
+  .footer-nav li a {
+    font-size: 1.8rem;
+    color: rgb(54, 54, 54);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .site-footer select{
+    font-size: 1.8rem;
+  }
+}
+/*********************************************************
+****************** Max 970px Ipad etc *******************/
+@media (max-width: 970px) {
+  .site-header{
+    height: 70vh;
+  }
+  .image-column {
+    display: none;
+  }
+  .text-column {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-heading {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-btn{
+    margin-left: 0;
+  }
+  .row{
+    margin: 0;
+    padding: 0 5rem 0 5rem;
+  }
+  .image-container{
+    display: none;
+  }
+  .feature-description{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .feature-description-text{
+    font-size: 1.8rem;
+  }
+  .users-feedback-opinion{
+    font-size: 2rem;
+  }
+  .app-functions-img{
+    display: none;
+  }
+  .app-functions-column-left{
+    padding: 0 0 0 10rem;
+  }
+  .app-functions-column-right{
+    padding: 0 10rem 0 0;
+  }
+  .app-functions-column-left img, .app-functions-column-right img {
+    align-self: center;
+    padding: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .subscribe-text, .download-text{
+    font-size: 2rem;
+    padding: 0 5rem 0 5rem;
+  }
+  .input-wrapper input[type="email"]{
+    font-size: 2rem;
+    padding: 1rem 25rem 1rem 2rem;
+  }
+  .subscribe-btn{
+    font-size: 2rem;
+    padding: 1rem 3rem 1rem 4rem;
+  }
+  .footer-nav li a {
+    font-size: 1.4rem;
+  }
+  .site-footer select {
+    font-size: 1.4rem;
+  }
+}
+/*********************************************************
+**************** Max 699px, min 500px ******************/
+@media (max-width: 699px) and (min-width: 500px) {
+  .site-header{
+    height: 85vh;
+  }
+  .feature-description-heading, .subscribe-heading, .users-feedback-heading, .download-heading{
+    font-size: 5rem;
+  }
+  .app-functions-column-left{
+    padding: 0 0 0 2rem;
+  }
+  .app-functions-column-right{
+    padding: 0 5rem 0 0;
+  }
+  .app-functions-column-left img, .app-functions-column-right img {
+    align-self: center;
+    padding: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .app-functions-column-right p, .app-functions-column-left p{
+    width: 90%;
+  }
+  .subscribe-text, .download-text{
+    font-size: 2rem;
+    padding: 0 5rem 0 5rem;
+  }
+  .input-wrapper input[type="email"]{
+    font-size: 2rem;
+    padding: 1rem 15rem 1rem 2rem;
+  }
+  .subscribe-btn{
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 6rem 0 0 15rem;
+  }
+  .footer-nav li a {
+    font-size: 1.4rem;
+  }
+  .site-footer select {
+    font-size: 1.4rem;
+  }  
+}
+/*******************************************************
+****************** 499px and lower ********************/
+@media (max-width: 499px) {
+  .site-header{
+    height: 85vh;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: center;
+  }
+  .hero-btn{
+    font-size: 1.6rem;
+  }
+  .feature-description-heading, .subscribe-heading, .users-feedback-heading, .download-heading{
+    font-size: 4rem;
+  }
+  .users-feedback-heading{
+    margin-bottom: 1rem;
+  }
+  .input-wrapper input[type="email"] {
+    font-size: 1.6rem;
+    padding: 1rem 6rem 1rem 2rem;
+  }
+  .subscribe-btn {
+    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 6rem 0 0 10rem;
+  }
+  .site-footer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .users-feedback{
+    margin: 5rem 0 5rem 0;
+  }
+  .users-feedback-opinion-box{
+    display: none;
+  }
+  .highlighted{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 100%;
+  }
+  .app-functions {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
 }
