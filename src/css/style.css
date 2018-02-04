@@ -257,6 +257,32 @@ a{
   align-self: flex-end;
   margin-right: 20rem;
 }
+.app-functions-column-right{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-left: 5rem;
+}
+.app-functions-column-right h3{
+  font-size: 2.4rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+  margin: 0;
+}
+.app-functions-column-right p{
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.75;
+  margin: 0.2rem;
+  width: 50%;
+}
+.app-functions-column-right img{
+  align-self: flex-start;
+  margin-left: 20rem;
+}
 .subscribe{
   margin: 4rem 0 4rem 0;
   border-bottom: 0.1rem solid #ccc;
