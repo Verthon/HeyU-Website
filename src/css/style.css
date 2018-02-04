@@ -10,7 +10,7 @@ a{
 }
 .site-header{
   height: 90vh;
-  background: url(../images/rectangle.svg);
+  background: url(../images/Rectangle.svg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -389,6 +389,7 @@ a{
 }
 /*********************************************************
 /* Responsive styles */
+<<<<<<< HEAD
 /*Ipad Pro */
 @media (max-width: 1024px) and (min-width: 971px){
   .site-header .site-navigation ul li a {
@@ -624,4 +625,10 @@ a{
     display: flex;
     justify-content: center;
   }
+=======
+
+/* Max 970px */
+@media (max-width: 970px) and (min-width: 600px) {
+  
+>>>>>>> 0ef24bdb03a9b2ee255991eee656257065e25779
 }
