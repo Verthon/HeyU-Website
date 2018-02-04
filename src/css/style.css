@@ -10,7 +10,7 @@ a{
 }
 .site-header{
   height: 90vh;
-  background: url(../images/rectangle.svg);
+  background: url(src/images/rectangle.svg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
