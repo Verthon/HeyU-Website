@@ -45,6 +45,9 @@ a{
 .site-header .site-navigation ul li a:hover{
   text-decoration-line: line-through;
 }
+.nav-icon{
+  display: none;
+}
 .hero{
   margin-top: 7rem;
   display: flex;
@@ -389,7 +392,6 @@ a{
 }
 /*********************************************************
 /* Responsive styles */
-<<<<<<< HEAD
 /*Ipad Pro */
 @media (max-width: 1024px) and (min-width: 971px){
   .site-header .site-navigation ul li a {
@@ -456,6 +458,37 @@ a{
 @media (max-width: 970px) {
   .site-header{
     height: 70vh;
+  }
+  .nav-icon{
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-line{
+    border: 0.1rem solid transparent;
+    border-radius: 2rem;
+    height: 0.3rem;
+    margin-bottom: 0.4rem;
+    width: 2.5rem;
+    background: #fff;
+  }
+  .site-navigation ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 20rem 7rem 0 0;
+  }
+  .site-navigation ul li{
+    margin: 0 1rem 0 1rem;
+  }
+  .site-header .site-navigation ul li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-weight: 300;
   }
   .image-column {
     display: none;
@@ -524,8 +557,8 @@ a{
     font-size: 2rem;
     padding: 1rem 3rem 1rem 4rem;
   }
-  .footer-nav li a {
-    font-size: 1.4rem;
+  .footer-nav{
+    display: none;
   }
   .site-footer select {
     font-size: 1.4rem;
@@ -625,10 +658,8 @@ a{
     display: flex;
     justify-content: center;
   }
-=======
 
 /* Max 970px */
 @media (max-width: 970px) and (min-width: 600px) {
   
->>>>>>> 0ef24bdb03a9b2ee255991eee656257065e25779
 }
