@@ -5,6 +5,9 @@ html, body, ul{
   font-family: 'Lato';
   color: #eeeeee;
 }
+body *{
+  box-sizing: border-box;
+}
 a{
   text-decoration: none;
 }
@@ -471,6 +474,11 @@ a{
     width: 2.5rem;
     background: #fff;
   }
+  .site-header .site-navigation{
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+  }
   .site-navigation ul {
     list-style: none;
     display: none;
@@ -478,7 +486,12 @@ a{
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin: 20rem 7rem 0 0;
+    margin: 0;
+    transition: transform ease-out 250ms;
+    height: 100vh;
+    z-index: 1;
+    background: orange;
+    position: absolute;
   }
   .site-navigation ul li{
     margin: 0 1rem 0 1rem;
@@ -611,8 +624,20 @@ a{
 /*******************************************************
 ****************** 499px and lower ********************/
 @media (max-width: 499px) {
+  .hero{
+    margin-top: 2rem;
+  }
   .site-header{
     height: 85vh;
+  }
+  .site-header .site-navigation ul{
+    margin-top: 20rem;
+    height: 30rem;
+    justify-content: space-around;
+    background: #eeeeee;
+  }
+  .site-header .site-navigation ul li a{
+    color: #e83631;
   }
   .hero-description {
     font-size: 1.6rem;
