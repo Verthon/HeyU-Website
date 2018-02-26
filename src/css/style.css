@@ -483,14 +483,15 @@ a{
     list-style: none;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     align-items: center;
     margin: 0;
     transition: transform ease-out 250ms;
-    height: 100vh;
+    height: 40rem;
+    margin-top: 25rem;
     z-index: 1;
-    background: orange;
+    background: #eeeeee;
     position: absolute;
   }
   .site-navigation ul li{
@@ -498,8 +499,8 @@ a{
   }
   .site-header .site-navigation ul li a{
     text-decoration: none;
-    font-size: 1.8rem;
-    color: #eeeeee;
+    font-size: 2rem;
+    color: #e83631;
     text-transform: uppercase;
     font-weight: 300;
   }
@@ -683,8 +684,16 @@ a{
     display: flex;
     justify-content: center;
   }
-
-/* Max 970px */
-@media (max-width: 970px) and (min-width: 600px) {
-  
-}
+  .app-functions-row{
+    flex-wrap: wrap;
+    height: 20rem;
+  }
+  .app-functions-column-left {
+    padding: 0px 0 0 5rem;
+  }
+  .app-functions-column-right {
+    padding: 0 5rem 0 0;
+  }
+  .app-functions-column-left p, .app-functions-column-right p{
+    display: none;
+  }
