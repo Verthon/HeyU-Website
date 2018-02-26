@@ -1,10 +1,5 @@
-# HeyU Website template
-
-## To-do
-
-- broken menus(top - no hamburger, footer - same),
-- broken section with app-functions
+# HeyU Website template PSD to HTML
 
 https://verthon.github.io/HeyU-Website/
 
-https://symu.co/freebies/templates-4/heyu-psd-template/
+[You can find PSD here: ](https://symu.co/freebies/templates-4/heyu-psd-template/)
