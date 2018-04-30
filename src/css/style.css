@@ -245,12 +245,15 @@ a{
   align-items: center;
   width: 50%;
   padding-right: 5rem;
+  position: relative;
 }
 .app-functions-column-left h3{
   font-size: 2.4rem;
   color: rgb(255, 255, 255);
   line-height: 1.4;
   margin: 0;
+  position: absolute;
+  top: 32%;
 }
 .app-functions-column-left p{
   font-size: 1.4rem;
@@ -261,7 +264,7 @@ a{
 }
 .app-functions-column-left img{
   align-self: flex-end;
-  margin-right: 20rem;
+  margin-right: 20.5rem;
 }
 .app-functions-column-right{
   height: 100%;
@@ -271,12 +274,15 @@ a{
   align-items: center;
   width: 50%;
   padding-left: 5rem;
+  position: relative;
 }
 .app-functions-column-right h3{
   font-size: 2.4rem;
   color: rgb(255, 255, 255);
   line-height: 1.4;
   margin: 0;
+  position: absolute;
+  top: 32%;
 }
 .app-functions-column-right p{
   font-size: 1.4rem;
@@ -550,14 +556,25 @@ a{
   .app-functions-column-left{
     padding: 0 0 0 10rem;
   }
+  .app-functions-column-left h3{
+    font-size: 1.4rem;
+    position: relative;
+    top: 0;
+  }
   .app-functions-column-right{
     padding: 0 10rem 0 0;
+  }
+  .app-functions-column-right h3{
+    font-size: 1.4rem;
+    position: relative;
+    top: 0;
   }
   .app-functions-column-left img, .app-functions-column-right img {
     align-self: center;
     padding: 1rem;
     margin-right: 0;
     margin-left: 0;
+    min-height: 70px;
   }
   .subscribe-text, .download-text{
     font-size: 2rem;
