@@ -1,0 +1,34 @@
+.hero{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  flex-direction: column;
+
+  &__heading{
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  &__description{
+    width: 70%;
+  }
+
+  &__btn{
+    border: 0.1rem solid transparent;
+    align-self: center;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2.5rem;
+    font-size: 1.1rem;
+    color: $sparkling-red;
+    margin-top: 1rem;
+    background-color: $super-silver;
+  }
+}
+
+.new-line {
+  display: inline-flex;
+}
+

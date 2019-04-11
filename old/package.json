@@ -1,0 +1,21 @@
+{
+  "name": "heyu-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verthon/HeyU-Website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Verthon/HeyU-Website/issues"
+  },
+  "homepage": "https://github.com/Verthon/HeyU-Website#readme",
+  "dependencies": {}
+}
