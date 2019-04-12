@@ -1,0 +1,23 @@
+.app-feature{
+  margin: 0 2rem 2rem 2rem;
+
+  &__title{
+    color: $dark-grey;
+    font-size: 1.9rem;
+  }
+
+  &__text{
+    color: $grey;
+    line-height: 1.5;
+  }
+
+  &__image{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.red-dot{
+  color: $sparkling-red;
+  font-size: 2rem;
+}

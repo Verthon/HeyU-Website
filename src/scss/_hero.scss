@@ -8,18 +8,21 @@
   flex-direction: column;
 
   &__heading{
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     text-align: center;
+    margin: 0.75rem 0;
+    font-width: 700;
   }
 
   &__description{
-    width: 70%;
+    width: 60%;
+    margin: 0.5rem;
   }
 
   &__btn{
     border: 0.1rem solid transparent;
     align-self: center;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 2.75rem;
     border-radius: 2.5rem;
     font-size: 1.1rem;
     color: $sparkling-red;
