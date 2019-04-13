@@ -1,0 +1,40 @@
+.newsletter{
+  margin: 2rem 2rem 5rem 2rem;
+
+  &__title{
+    font-size: 1.9rem;
+    color: $dark-grey;
+  }
+
+  &__input{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    input{
+      border: 0.1rem solid transparent;
+      border-radius: 1.1rem;
+      background: $zhen-pearl;
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      height: 2.5rem;
+      width: 100%;
+    }
+  }
+
+  &__text{
+    color: $grey;
+    padding: 0.25rem;
+    line-height: 1.5;
+  }
+
+  &__btn{
+    position: absolute;
+    border: 0.1rem solid transparent;
+    border-radius: 1.1rem;
+    height: 2.5rem;
+    right: 0;
+    background: linear-gradient(180deg, $joker-smile 20%, $heavy-orange 80%);
+    color: $white;
+  }
+}

@@ -1,0 +1,20 @@
+.download{
+
+  margin: 2rem;
+
+  &__title{
+    font-size: 1.9rem;
+    color: $dark-grey;
+    letter-spacing: -1px;
+  }
+
+  &__image{
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__description{
+    color: $grey;
+    line-height: 1.5;
+  }
+}
