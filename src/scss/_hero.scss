@@ -15,14 +15,14 @@
   }
 
   &__description{
-    width: 60%;
-    margin: 0.5rem;
+    padding: 1rem 2.5rem;
+    margin: auto;
   }
 
   &__btn{
     border: 0.1rem solid transparent;
     align-self: center;
-    padding: 0.5rem 2.75rem;
+    padding: 0.55rem 3rem;
     border-radius: 2.5rem;
     font-size: 1.1rem;
     color: $sparkling-red;

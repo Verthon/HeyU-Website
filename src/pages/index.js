@@ -9,6 +9,7 @@ import Testimonials from '../components/testimonials';
 import Functions from '../components/functions';
 import Newsletter from '../components/newsletter';
 import Download from '../components/download';
+import Footer from '../components/footer';
 
 
 import HeyUMessaging from '../images/HeyU-easy-messaging.png';
@@ -36,6 +37,7 @@ const IndexPage = () => (
     <Functions images={[fconversation, fpicture, fphone, fcamera, smartphone2]}/>
     <Newsletter/>
     <Download image={logo} button={iosbtn}/>
+    <Footer/>
 
   </React.Fragment>
 )
