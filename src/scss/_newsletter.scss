@@ -1,6 +1,10 @@
 .newsletter{
   margin: 2rem 2rem 5rem 2rem;
 
+  @include mQ($ipad){
+    margin: 2rem 5rem 5rem 5rem;
+  }
+
   &__title{
     font-size: 1.9rem;
     color: $dark-grey;
@@ -10,6 +14,11 @@
     display: flex;
     justify-content: center;
     position: relative;
+
+    @include mQ($ipad){
+      margin: auto;
+      width: 80%;
+    }
 
     input{
       border: 0.1rem solid transparent;

@@ -4,4 +4,8 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+
+  @include mQ($ipad){
+    height: 70vh;
+  }
 }

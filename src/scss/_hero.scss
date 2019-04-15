@@ -6,32 +6,79 @@
   justify-content: center;
   color: $white;
   flex-direction: column;
+  opacity: 1;
+  animation: slideRight ease-out 0.5s;
+
+  @include mQ($ipad){
+    margin: 4rem 0 0 0;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  &__col{
+    display: flex;
+    flex-basis: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    @include mQ($ipad){
+      flex-basis: 50%;
+    }
+  }
+
 
   &__heading{
     font-size: 2.5rem;
-    text-align: center;
     margin: 1.75rem 0;
-    font-width: 700;
+    font-weight: 700;
   }
 
   &__description{
-    padding: 1rem 2.5rem;
-    margin: auto;
+    width: 60%;
+    margin: 0.5rem;
   }
 
   &__btn{
     border: 0.1rem solid transparent;
     align-self: center;
-    padding: 0.55rem 3rem;
+    padding: 0.5rem 3rem;
     border-radius: 2.5rem;
     font-size: 1.1rem;
     color: $sparkling-red;
     margin-top: 1rem;
     background-color: $super-silver;
   }
+
+  &__image{
+    display: none;
+
+    @include mQ($ipad){
+      display: block;
+      max-width: 300px;
+    }
+  }
+
+
+
 }
 
 .new-line {
-  display: inline-flex;
+  display: flex;
 }
 
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-100%);
+	}
+	50%{
+		transform: translateX(20%);
+	}
+	65%{
+		transform: translateX(10%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}		
+}

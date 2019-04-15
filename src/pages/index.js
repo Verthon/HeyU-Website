@@ -12,6 +12,7 @@ import Download from '../components/download';
 import Footer from '../components/footer';
 
 
+import smartphone from './../images/HeyU-smartphone.png'
 import HeyUMessaging from '../images/HeyU-easy-messaging.png';
 import HeyUKeep from '../images/HeyU-keep-in-touch.png';
 import Avatar1 from '../images/HeyU-ceo-avatar-1.png';
@@ -29,7 +30,7 @@ const IndexPage = () => (
     <Header>
       <SEO title="HeyU innovative messenger" keywords={[`gatsby`, `application`, `react`]} />
       <Navbar/>
-      <Hero/>
+      <Hero image={smartphone}/>
     </Header>
     <Article title="Easy messaging" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" image={HeyUMessaging} imageAlt="Easy messaging"/>
     <Article title="Keep in touch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" image={HeyUKeep} imageAlt="Keep in touch"/>

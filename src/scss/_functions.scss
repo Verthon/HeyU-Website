@@ -1,8 +1,13 @@
 .app-functions{
   background: linear-gradient(180deg, $joker-smile 20%, $heavy-orange 80%);
+  padding: 2rem 0;
 
   &__col{
     flex-basis: 100%;
+
+    @include mQ($ipad){
+      flex-basis: 50%;
+    }
   }
 
   &__box{
@@ -29,5 +34,8 @@
 
   &__description{
     color: $white-lighter;
+    padding: 1rem 2.5rem;
+    margin: auto;
+    max-width: 90%;
   }
 }
