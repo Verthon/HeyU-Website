@@ -7,6 +7,10 @@
   padding: 0.5rem 2rem;
   color: $super-silver;
 
+  @include mQ($ipad){
+    padding: 0.5rem 4rem;
+  }
+
   &__logo{
     font-size: 2rem;
     font-weight: 600;

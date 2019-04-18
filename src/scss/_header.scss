@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
 
   @include mQ($ipad){
-    height: 70vh;
+    height: 65vh;
+  }
+
+  @include mQ($laptop-MDPI){
+    height: 80vh;
   }
 }

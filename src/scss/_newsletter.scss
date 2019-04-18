@@ -1,6 +1,10 @@
 .newsletter{
   margin: 2rem 2rem 5rem 2rem;
 
+  @include mQ($phablet){
+    margin: 2rem 4rem 5rem 4rem;
+  }
+
   @include mQ($ipad){
     margin: 2rem 5rem 5rem 5rem;
   }
@@ -18,6 +22,10 @@
     @include mQ($ipad){
       margin: auto;
       width: 80%;
+    }
+
+    @include mQ($ipad-pro){
+      width: 60%;
     }
 
     input{

@@ -4,7 +4,7 @@ const Testimonials = (props) => {
   return (
     <div className="testimonials">
       <h2 className="testimonials__title">What people say<span className="red-dot">.</span></h2>
-      <div className="row">
+      <div className="testimonials__wrapper">
         <div className="testimonials__feed">
           <p className="testimonials__text">"This is unbelievable. After using HeyU my business skyrocketed!"</p>
           <strong className="testimonials__owner">Symu.co</strong>

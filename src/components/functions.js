@@ -3,7 +3,7 @@ import React from 'react';
 const Functions = (props) => {
   return (
     <div className="app-functions">
-      <div className="row">
+      <div className="row container">
         <div className="app-functions__col">
           <div className="app-functions__box">
             <div className="app-functions__box__header">

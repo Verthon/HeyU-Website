@@ -9,10 +9,14 @@
   opacity: 1;
   animation: slideRight ease-out 0.5s;
 
-  @include mQ($ipad){
+  @include mQ($phablet){
     margin: 4rem 0 0 0;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  @include mQ($laptop-MDPI){
+    padding: 0 5rem;
   }
 
   &__col{
@@ -22,7 +26,7 @@
     flex-direction: column;
     align-items: center;
 
-    @include mQ($ipad){
+    @include mQ($phablet){
       flex-basis: 50%;
     }
   }
@@ -37,6 +41,18 @@
   &__description{
     width: 60%;
     margin: 0.5rem;
+
+    @include mQ($ipad-pro){
+      width: 50%;
+    }
+
+    @include mQ($laptop-MDPI){
+      width: 40%;
+    }
+
+    @include mQ($laptop-HDPI){
+      width: 30%;
+    }
   }
 
   &__btn{
@@ -53,8 +69,12 @@
   &__image{
     display: none;
 
-    @include mQ($ipad){
+    @include mQ($phablet){
       display: block;
+      max-width: 250px;
+    }
+
+    @include mQ($ipad){
       max-width: 300px;
     }
   }

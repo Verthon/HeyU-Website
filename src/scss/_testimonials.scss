@@ -1,6 +1,19 @@
 .testimonials{
   margin: 3rem 2rem 2rem 2rem;
 
+  @include mQ($phablet){
+    margin: 4rem;
+  }
+
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 100%;
+
+    @include mQ($ipad-pro){
+      max-width: 80%;
+    }
+  }
+
   &__title{
     text-align: center;
     color: $dark-grey;
@@ -13,6 +26,11 @@
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     position: relative;
+
+    @include mQ($ipad){
+      margin: 2rem auto;
+      max-width: 80%;
+    }
   }
 
   &__feed::after{
@@ -43,6 +61,11 @@
     display: flex;
     width: 100%;
     margin: 2.5rem 0 0 0;
+
+    @include mQ($ipad){
+      margin: 0 auto;
+      max-width: 75%;
+    }
   }
 }
 
