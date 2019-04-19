@@ -1,6 +1,8 @@
 .download{
-
-  margin: 2rem;
+  margin: 4rem 2rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 
   @include mQ($phablet){
     margin: 2rem 4rem;
@@ -14,6 +16,11 @@
     font-size: 1.9rem;
     color: $dark-grey;
     letter-spacing: -1px;
+    text-align: center;
+
+    @include mQ($ipad-pro){
+      font-size: 2.75rem;
+    }
   }
 
   &__image{
@@ -24,5 +31,9 @@
   &__description{
     color: $grey;
     line-height: 1.5;
+
+    @include mQ($ipad){
+      max-width: 90%;
+    }
   }
 }

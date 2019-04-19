@@ -1,5 +1,5 @@
 .testimonials{
-  margin: 3rem 2rem 2rem 2rem;
+  margin: 4rem 2rem;
 
   @include mQ($phablet){
     margin: 4rem;
@@ -12,6 +12,10 @@
     @include mQ($ipad-pro){
       max-width: 80%;
     }
+
+    @include mQ($ipad-pro){
+      max-width: 60%;
+    }
   }
 
   &__title{
@@ -19,6 +23,10 @@
     color: $dark-grey;
     font-size: 1.9rem;
     letter-spacing: -1px;
+
+    @include mQ($ipad-pro){
+      font-size: 2.75rem;
+    }
   }
 
   &__feed{

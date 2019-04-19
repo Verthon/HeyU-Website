@@ -32,8 +32,8 @@ const IndexPage = () => (
       <Navbar/>
       <Hero image={smartphone}/>
     </Header>
-    <Article title="Easy messaging" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" image={HeyUMessaging} imageAlt="Easy messaging"/>
-    <Article title="Keep in touch" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" image={HeyUKeep} imageAlt="Keep in touch"/>
+    <Article title="Easy messaging" text="Content is clipped if necessary to fit the padding box. Browsers always display scrollbars whether or not any content is actually clipped, preventing scrollbars from appearing or disappearing as content changes. Printers may still print overflowing content." image={HeyUMessaging} imageAlt="Easy messaging"/>
+    <Article title="Keep in touch" text="This module discusses text styling fundamentals, including setting fonts, boldness, italics, line and letter spacing, text drop shadows, and other text properties." image={HeyUKeep} imageAlt="Keep in touch"/>
     <Testimonials images={[Avatar1, Avatar2]} names={['Dave Adams', 'John Doe', 'Derek Coleman']} roles={['CEO', 'CTO', 'Sales manager']}/>
     <Functions images={[fconversation, fpicture, fphone, fcamera, smartphone2]}/>
     <Newsletter/>

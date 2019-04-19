@@ -1,5 +1,8 @@
 .newsletter{
-  margin: 2rem 2rem 5rem 2rem;
+  margin: 4rem 2rem;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 
   @include mQ($phablet){
     margin: 2rem 4rem 5rem 4rem;
@@ -12,12 +15,18 @@
   &__title{
     font-size: 1.9rem;
     color: $dark-grey;
+
+    @include mQ($ipad-pro){
+      font-size: 2.75rem;
+    }
   }
 
   &__input{
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 0;
+    width: 100%;
 
     @include mQ($ipad){
       margin: auto;
@@ -43,6 +52,10 @@
     color: $grey;
     padding: 0.25rem;
     line-height: 1.5;
+
+    @include mQ($ipad){
+      max-width: 90%;
+    }
   }
 
   &__btn{

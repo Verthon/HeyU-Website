@@ -1,5 +1,5 @@
 .app-feature{
-  margin: 0 2rem 2rem 2rem;
+  margin: 3rem 2rem;
 
   @include mQ($phablet){
     margin: 0 4rem 2rem 4rem;
@@ -9,15 +9,41 @@
     margin: 0 5rem 2rem 5rem;
   }
 
+  @include mQ($ipad-pro){
+    margin: 6rem;
+  }
+
+  &__col{
+    display: flex;
+    flex-basis: 100%;
+    flex: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include mQ($ipad-pro){
+      flex-basis: 50%;
+      justify-content: center;
+    }
+  }
+
   &__title{
     color: $dark-grey;
     font-size: 1.9rem;
     width: 100%;
+
+    @include mQ($ipad-pro){
+      font-size: 2.75rem;
+    }
   }
 
   &__text{
     color: $grey;
     line-height: 1.5;
+    margin: 2rem 0;
+
+    @include mQ($ipad){
+      max-width: 90%;
+    }
   }
 
   &__image{
@@ -30,4 +56,8 @@
 .red-dot{
   color: $sparkling-red;
   font-size: 2rem;
+  
+  @include mQ($ipad-pro){
+    font-size: 2.75rem;
+  }
 }
