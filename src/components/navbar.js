@@ -20,11 +20,10 @@ class Navbar extends React.Component {
   }
 
   render(){
-    //console.log(this.listRef.current);
     return(
       <nav className="site-navigation">
         <p className="site-navigation__logo"><Link to="/">{this.props.name}</Link></p>
-        <ul className={this.state.listToggle ? "site-navigation__list--active" : "site-navigation__list"} ref={this.listRef}>
+        <ul className={this.state.listToggle ? "site-navigation__list--active" : "site-navigation__list"}>
           {
             this.props.links.map((link, id) => {
               return (

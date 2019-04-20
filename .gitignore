@@ -33,6 +33,7 @@ bower_components
 build/Release
 
 # Dependency directories
+.netlify
 node_modules/
 jspm_packages/
 

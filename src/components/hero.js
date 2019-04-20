@@ -5,9 +5,9 @@ const Hero = (props) => {
     <div className="row">
       <div className="container hero">
         <div className="hero__col">
-          <h1 className="hero__heading">Simple, safe <span class="new-line">&amp; beautiful.</span></h1>
+          <h1 className="hero__heading">Simple, safe <span className="new-line">&amp; beautiful.</span></h1>
           <p className="hero__description">With <strong>HeyU</strong>, you'll get fast, simple, secure messaging!</p>
-          <button className="hero__btn">Download</button>
+          <button className="hero__btn">Download now</button>
         </div>
         <div className="hero__col">
           <img src={props.image} alt="Smartphone" className="hero__image"/>

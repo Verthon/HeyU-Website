@@ -19,19 +19,30 @@
 
   &__box{
     display: flex;
+    margin: 1rem;
+
+    @include mQ($ipad){
+      margin: 0;
+    }
 
     &__header{
-      margin: 1rem 0.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
-      min-height: 10.5rem;
+
+      @include mQ($ipad){
+        margin: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        min-height: 10.5rem;
+      }
+      
 
       &--reverse{
-        order: 2;
-        text-align: left;
-        align-items: flex-start;
+        @include mQ($ipad){
+          order: 2;
+          text-align: left;
+          align-items: flex-start;
+        }
       }
     }
   }
@@ -61,6 +72,7 @@
     @include mQ($ipad-pro){
       flex-basis: 30%;
       display: flex;
+      align-items: center;
       
     }
   }
