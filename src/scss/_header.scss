@@ -12,4 +12,8 @@
   @include mQ($laptop-MDPI){
     height: 80vh;
   }
+
+  @include mQ($laptop-HDPI){
+    height: 90vh;
+  }
 }

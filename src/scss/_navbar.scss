@@ -1,7 +1,7 @@
 .site-navigation{
   display: flex;
   width: 100%;
-  //background-color: $sparkling-red;
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
@@ -21,6 +21,10 @@
     list-style: none;
     display: none;
     transition: all 0.5s ease-in;
+
+    @include mQ($ipad-pro){
+      display: flex;
+    }
   }
 
   &__list--active{
@@ -41,10 +45,18 @@
     color: $sparkling-red;
     padding: 1rem;
     margin: 0 auto;
+
+    @include mQ($ipad-pro){
+      color: $zhen-pearl;
+    }
   }
 
   &__link{
     text-transform: uppercase;
+  }
+
+  &__link:hover{
+    text-decoration: line-through;
   }
 
 }
@@ -58,6 +70,10 @@
   background-color: transparent;
   cursor: pointer;
   outline: 0;
+
+  @include mQ($ipad-pro){
+    display: none;
+  }
 
   &__line{
     width: 25px;

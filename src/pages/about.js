@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 const AboutPage = () => {
   return (
@@ -8,6 +9,7 @@ const AboutPage = () => {
       <div className="about">
         <p>about</p>
       </div>
+      <Footer/>
     </React.Fragment>
     
   )
