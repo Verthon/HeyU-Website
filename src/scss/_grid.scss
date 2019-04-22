@@ -5,8 +5,24 @@
 }
 
 .container{
-  max-width: 1100px;
+  max-width: 90%;
   margin: auto;
+
+  @include mQ($phablet){
+    max-width: 450px;
+  }
+
+  @include mQ($ipad){
+    max-width: 700px;
+  }
+
+  @include mQ($ipad-pro){
+    max-width: 900px;
+  }
+
+  @include mQ($laptop-HDPI){
+    max-width: 1100px;
+  }
 }
 
 .btn{

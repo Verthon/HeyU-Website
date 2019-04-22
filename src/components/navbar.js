@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
   render(){
     return(
-      <nav className="site-navigation">
+      <nav className={this.props.activeClass}>
         <p className="site-navigation__logo"><Link to="/">{this.props.name}</Link></p>
         <ul className={this.state.listToggle ? "site-navigation__list--active" : "site-navigation__list"}>
           {
@@ -47,7 +47,8 @@ class Navbar extends React.Component {
 
 Navbar.defaultProps = {
   name: "HeyU",
-  links: [ "about", "contact" ]
+  links: [ "about", "contact" ],
+  activeClass: "site-navigation"
 }
 
 export default Navbar;

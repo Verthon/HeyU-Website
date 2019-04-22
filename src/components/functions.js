@@ -5,8 +5,7 @@ import WOW from "wowjs";
 class Functions extends React.Component {
 
   componentDidMount() {
-    const wow = new WOW.WOW();
-    
+    const wow = new WOW.WOW();   
     wow.init();
   }
 

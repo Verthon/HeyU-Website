@@ -1,4 +1,40 @@
 .about{
   display: flex;
   flex-direction: column;
+
+  &__col{
+    display: flex;
+    flex-basis: 100%;
+    flex: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include mQ($ipad-pro){
+      flex-basis: 50%;
+      justify-content: center;
+    }
+
+    @include mQ($laptop-MDPI){
+      padding: 2rem;
+    }
+  }
+
+  &__title{
+    color: $dark-grey;
+    font-size: 1.9rem;
+    width: 100%;
+
+    @include mQ($ipad-pro){
+      font-size: 2.75rem;
+    } 
+  }
+
+  &__description{
+    color: $grey;
+    line-height: 1.5;
+  }
+
+  &__image{
+    max-width: 100%;
+  }
 }

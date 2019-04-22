@@ -7,8 +7,16 @@
   padding: 0.5rem 2rem;
   color: $super-silver;
 
+  &__secondary{
+    background-color: $joker-smile;
+  }
+
   @include mQ($ipad){
     padding: 0.5rem 4rem;
+  }
+
+  @include mQ($laptop-MDPI){
+    padding: 0.5rem 10rem;
   }
 
   &__logo{

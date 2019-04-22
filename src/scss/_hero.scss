@@ -9,7 +9,7 @@
   opacity: 1;
   animation: slideRight ease-out 0.5s;
 
-  @include mQ($phablet){
+  @include mQ($ipad){
     margin: 4rem auto 0 auto;
     flex-direction: row;
     align-items: flex-start;
@@ -26,17 +26,13 @@
     flex-direction: column;
     align-items: center;
 
-    @include mQ($phablet){
-      flex-basis: 50%;
-    }
-
-    @include mQ($laptop-HDPI){
+    @include mQ($laptop-MDPI){
       align-items: flex-start;
     }
   }
 
   &__col:last-of-type{
-    @include mQ($laptop-HDPI){
+    @include mQ($laptop-MDPI){
       align-items: flex-end;
     }
   }
@@ -83,7 +79,7 @@
     margin-top: 1rem;
     background-color: $super-silver;
 
-    @include mQ($laptop-HDPI){
+    @include mQ($laptop-MDPI){
       align-self: flex-start;
       margin: 3rem 0 0 0;
     }
@@ -92,12 +88,8 @@
   &__image{
     display: none;
 
-    @include mQ($phablet){
-      display: block;
-      max-width: 250px;
-    }
-
     @include mQ($ipad){
+      display: flex;
       max-width: 300px;
     }
 
