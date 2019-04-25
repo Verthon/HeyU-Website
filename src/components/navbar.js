@@ -35,7 +35,7 @@ class Navbar extends React.Component {
 
           }
         </ul>
-        <button className="nav-btn" id="nav-hamburger" onClick={this.toggleList}>
+        <button className="nav-btn" id="nav-hamburger" onClick={this.toggleList} role="button" aria-hidden="false" aria-label="Toggle navigation button">
           <span className="nav-btn__line"></span>
           <span className="nav-btn__line nav-btn__line--small"></span>
           <span className="nav-btn__line"></span>

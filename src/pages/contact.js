@@ -19,7 +19,7 @@ const Contact = () => {
             <input className="input" type="tel" placeholder="123-456-789" name="number" id="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"/>
             <label htmlFor="message" hidden="true">Message</label>
             <textarea name="message" id="" cols="30" rows="10" className="textarea" placeholder="Message"></textarea>
-            <button className="btn">Submit</button>
+            <button type="submit" className="btn" role="button" aria-hidden="false" aria-label="submit form button">Submit</button>
           </form>
         </div>
       </div>

@@ -10,7 +10,7 @@ import WOW from 'wowjs';
 class AboutPage extends React.Component {
 
   componentDidMount(){
-    const wow = new WOW.WOW();
+    const wow = new WOW.WOW({ live: false });
     wow.init();
   }
 

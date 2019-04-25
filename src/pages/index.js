@@ -10,6 +10,8 @@ import Newsletter from '../components/newsletter';
 import Download from '../components/download';
 import Footer from '../components/footer';
 
+import '../components/layout.scss';
+
 
 import smartphone from './../images/HeyU-smartphone.png'
 import HeyUMessaging from '../images/HeyU-easy-messaging.png';
