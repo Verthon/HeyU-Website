@@ -7,6 +7,7 @@ const Newsletter = (props) => {
       <p className="newsletter__text">Subscribe to our email newsletter today to receive updates on the lastest news, 
       tutorials and special offers</p>
       <div className="newsletter__input container">
+        <label htmlFor="email" className="label" hidden="true">Email address</label>
         <input type="email" placeholder="Email address"/>
         <button className="newsletter__btn" type="submit">Submit</button>
       </div>

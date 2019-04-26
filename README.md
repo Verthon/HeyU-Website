@@ -2,6 +2,12 @@
 
 Mobile first, responsive landing page for HeyU mobile app presentation
 Live version: [HeyUWebsite](https://heyu-website.netlify.com)
+Website has been rated over 90 in Google Lighthouse in 4 different categories:
+
+- Performance
+- Accessibility
+- Best practicies
+- SEO
 
 ## Technologies used:
 

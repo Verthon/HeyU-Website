@@ -78,6 +78,7 @@
     color: $sparkling-red;
     margin-top: 1rem;
     background-color: $super-silver;
+    font-weight: bold;
 
     @include mQ($laptop-MDPI){
       align-self: flex-start;
